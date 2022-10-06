@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+</head>
+<body>
+    <div class="wr">
+        <div class="u-con">
+
+            <input type="text" id="nickname" placeholder="대화명을 입력하세요.">
+        </div>
+        <div class="d-con">
+            <ul class="chatList">
+                <li class="sent">
+                    <!-- <div class="profile">
+                        <img src="img/ME_1.jpg" alt="any" class="img">
+                    </div>
+                    <div class="messege">
+                        <span class="user">AA</span>
+                        <div class="chat">
+                            <span class="msg">Hi</span>
+                            <span class="time">PM 2:10</span>
+                        </div>
+                    </div> -->
+                </li>
+
+                <li class="rec">
+                    <!-- <div class="profile">
+                        <img src="img/ME_2.jpg" alt="any" class="img">
+                    </div>
+                    <div class="messege">
+                        <span class="user">BB</span>
+                        <div class="chat">
+                            <span class="msg">Hi</span>
+                            <span class="time">PM 2:12</span>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="i-con">
+            <input type="text" class="chatInput">
+            <button class="sendBtn">전송</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.wr {
+    height: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* u-con : 대화명 입력창 */
+
+.u-con{
+    background: #ccc;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+}
+.u-con input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+    width: 50%;
+}
+.u-con input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+/* d-con : 채팅창 */
+
+.d-con {
+    flex: 12;
+    background: #ddd;
+    overflow-y: scroll;
+}
+.chatList li {
+    width: 90%;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+}
+
+.profile {
+    margin: 0 0.5rem;
+}
+.profile .img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.messege {
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.messege .user {
+    justify-content: flex-start;
+    font-size: 12px;
+    margin: 0.5rem 0.7rem;
+}
+.messege .chat {
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+}
+.messege .chat .msg {
+    flex: 9;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    margin: 0 0.5rem;
+}
+.messege .chat .time {
+    font-size: 12px;
+}
+
+.sent {
+    flex-direction: row-reverse;
+    float: right;
+}
+.sent .user {
+    display: flex;
+    justify-content: flex-end;
+}
+.sent .chat {
+    flex-direction: row-reverse;
+}
+.sent .msg {
+    background-color: #ccc;
+}
+
+.rec .msg {
+    background-color: #fff;
+}
+
+/* i-con : 입력창 */
+
+.i-con{
+    flex: 1;
+    background: #eee;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 5px;
+}
+.i-con input {
+    flex: 8.5;
+    border: none;
+}
+.i-con input:focus {
+    outline: none;
+    border: none;
+}
+
+.i-con .sendBtn {
+    flex: 1.5;
+    border: none;
+}
+.i-con .sendBtn:hover {
+    background: #eaeaea;
+    font-weight: bold;
+}
+.i-con .sendBtn:focus {
+    background: #dedede;
+    font-weight: bold;
+}
